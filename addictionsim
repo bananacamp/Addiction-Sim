@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sim: The Tremors in Room 304</title>
+    <style>
+        :root {
+            --primary: #005f73;
+            --secondary: #0a9396;
+            --accent: #ee9b00;
+            --light: #f1faee;
+            --dark: #1d3557;
+            --danger: #ae2012;
+        }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; background-color: #f4f4f9; color: #333; }
+        header { background-color: var(--primary); color: white; padding: 1rem; text-align: center; }
+        .container { max-width: 900px; margin: 2rem auto; padding: 0 1rem; }
+        
+        /* Card Styles */
+        .card { background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 2rem; }
+        .hidden { display: none; }
+        
+        /* Buttons */
+        button { background-color: var(--primary); color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; font-size: 1rem; margin-top: 10px; }
+        button:hover { background-color: var(--secondary); }
+        button.action-btn { background-color: var(--accent); color: white; margin: 5px; }
+        button.danger-btn { background-color: var(--danger); }
+
+        /* EHR Styles */
+        .ehr-header { border-bottom: 2px solid #ddd; padding-bottom: 10px; margin-bottom: 15px; display: flex; justify-content: space-between; }
+        .vitals-bar { background-color: #e9ecef; padding: 10px; border-left: 5px solid var(--danger); font-family: monospace; font-size: 1.1em; }
+
+        /* Dialogue Box */
+        .dialogue-box { background-color: #e0f7fa; border-left: 5px solid var(--secondary); padding: 15px; margin: 15px 0; font-style: italic; }
+        
+        /* Progress Bar */
+        .progress-container { width: 100%; background-color: #ddd; border-radius: 5px; margin-bottom: 20px; }
+        .progress-bar { width: 0%; height: 10px; background-color: var(--secondary); border-radius: 5px; transition: width 0.3s; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>ADN Nursing Simulation: Alcohol Withdrawal</h1>
+    <p>Scenario: "The Tremors in Room 304"</p>
+</header>
+
+<div class="container">
+
+    <div id="step-intro" class="card">
+        <h2>Learning Objectives</h2>
+        <ul>
+            <li>Identify physiological signs of alcohol withdrawal.</li>
+            <li>Accurately administer the <strong>CIWA-Ar</strong> scale.</li>
+            <li>Implement safety measures and pharmacologic interventions.</li>
+        </ul>
+        <p><strong>Pre-Brief:</strong> You are the primary nurse for Robert Miller. He was admitted yesterday for cellulitis. Review his chart before entering the room.</p
